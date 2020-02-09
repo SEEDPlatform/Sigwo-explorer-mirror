@@ -5,15 +5,15 @@
 */
 {
   // name your instance!
-  "title": "Explorerz.top",
+  "title": "SEEDEXplorer",
 
   "address": "127.0.0.1:3001",
 
   // coin name
-  "coin": "Darkcoin",
+  "coin": "SEED",
 
   // coin symbol
-  "symbol": "DRK",
+  "symbol": "SEED",
 
   // coin type
   //  Options:
@@ -57,9 +57,9 @@
   // wallet settings
   "wallet": {
     "host": "localhost",
-    "port": 9332,
-    "user": "darkcoinrpc",
-    "pass": "123gfjk3R3pCCVjHtbRde2s5kzdf233sa"
+    "port": 42422,
+    "user": "SEEDExplorer",
+    "pass": "jub33u7TF2Uf6f23UFdu3vcvd4thj2u5yfH"
   },
 
   // confirmations
@@ -73,13 +73,13 @@
     "api": true,
     "markets": false,
     "richlist": true,
-    "twitter": true,
+    "twitter": false,
     "facebook": false,
     "googleplus": false,
     "search": true,
     "movement": true,
     "network": true,
-    "masternodes": false,
+    "masternodes": true,
     "coininfo": false,
     "coinmarketcap": false
   },
@@ -88,16 +88,16 @@
   "index": {
     "show_hashrate": true,
     "show_coin_supply": true,
-    "difficulty": "POW",
+    "difficulty": "Hybrid",
     "last_txs": 100
   },
 
   // ensure links on API page are valid
   "api": {
-    "blockindex": 1337,
-    "blockhash": "1733320247b15ca2262be646397d1ffd6be953fa638ebb8f5dcbb4c2b91b34f1",
-    "txhash": "f270cd3813254c9922a2e222a56ba745842d9112223a1394062e460b33d27b7e",
-    "address": "RBiXWscC63Jdn1GfDtRj8hgv4Q6Zppvpwb"
+    "blockindex": 909,
+    "blockhash": "fa903fb7a547a8f58db81f7ee8e60db4300bfb2c14bbfb684ff72d83ba3837bf",
+    "txhash": "317d78d91bb04a5437b8b372fc250faa90101566b194c619417736c311ad060f",
+    "address": "SSMi33FxDb9jEDFmMrhC3ewcvZVnkjoSki"
   },
 
   // market settings
@@ -132,7 +132,7 @@
   // Masternodes page
   // default port: Default port a masternode is running. 
   "masternodes": {
-    "default_port": 12845,
+    "default_port": 42422,
 
     // Use index-based values (starting with 0).
     // 0 is the key of the masterlist data.
@@ -152,9 +152,9 @@
     "basic_info_links": [
       ["Github", "http://github.com/"]
     ],
-    "masternode_required": 1000,
+    "masternode_required": 4200,
     "block_time_sec": 120,
-    "block_reward_mn": 5
+    "block_reward_mn": 4.2
   },
 
   // CoinMarketCap integration
@@ -168,14 +168,14 @@
   "googleplus": "yourgooglepluspage",
 
   //genesis
-  "genesis_tx": "65f705d2f385dc85763a317b3ec000063003d6b039546af5d8195a5ec27ae410",
-  "genesis_block": "b2926a56ca64e0cd2430347e383f63ad7092f406088b9b86d6d68c2a34baef51",
+  "genesis_tx": "1069d5cafd0525245c0f0c4aba713544bc463a0609e7c2391e655fa11301c2ac",
+  "genesis_block": "00000e2dda7edcf0e414d03ed1848a8f5d365bd889ff0d85de5e24705a6fb7a2",
 
   // Fetch blocks from <index>
   "fetch_blocks_from": 0,
 
   //heavy (enable/disable additional heavy features)
-  "heavy": false,
+  "heavy": true,
 
   //amount of txs to index per address (stores latest n txs)
   "txcount": 100,
@@ -198,7 +198,7 @@
 
   // nethash unitd: sets nethash API return units
   // valid options: "P" (PH/s), "T" (TH/s), "G" (GH/s), "M" (MH/s), "K" (KH/s)
-  "nethash_units": "G",
+  "nethash_units": "K",
 
   // Address labels
   // example : "JhbrvAmM7kNpwA6wD5KoAsbtikLWWMNPcM": {"label": "This is a burn address", "type":"danger", "url":"http://example.com"}
